@@ -1,0 +1,79 @@
+<section class="margin-top-20">
+  <div class="container">
+    <div id="all-type">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="margin-filter">
+            <form class="form-inline">
+              <label class="label-width" for="sip">SIP starting from:</label>
+              <mat-chip-list>
+                <mat-chip *ngFor="let item of SIPStartingJSON">Up to ₹ {{item.amount}}</mat-chip>
+              </mat-chip-list>
+            </form>
+          </div>
+
+          <div class="margin-filter">
+            <form class="form-inline">
+              <label class="label-width risk-right" for="sip">Risk:</label>
+              <mat-chip-list>
+                <mat-chip *ngFor="let item of RiskJSON">{{item.risk}}</mat-chip>
+              </mat-chip-list>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-5 line">
+          <div class="margin-filter">
+            <form class="form-inline">
+              <label class="sort-width" for="sip">Sort by:</label>
+              <mat-chip-list>
+                <mat-chip *ngFor="let item of SortByJSON">{{item.sort}}</mat-chip>
+              </mat-chip-list>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <h1 class="equality-heading">Equity</h1>
+      <div class="row margin-filter">
+        <div class="col">
+          <form class="form-inline">
+            <label class="category-width" for="sip">Category:</label>
+            <mat-chip-list>
+              <mat-chip *ngFor="let item of EquityJSON">{{item.equity}}</mat-chip>
+            </mat-chip-list>
+          </form>
+        </div>
+      </div>
+
+      <div style="margin-top:30px" class="row margin-filter">
+        <div class="col-sm-4" *ngFor="let item of CardJSON">
+          <mat-card style="margin-top:10px">
+            <div class="row">
+              <div class="col-sm-8">
+                <h4>{{item.fundName}}</h4>
+              </div>
+              <div class="col-sm-4 plr0">
+                <img src="{{item.img}}" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p>{{item.equity}}</p>
+                <h2 class="rate year-return-margin">{{item.rate}}</h2>
+                <p>{{item.yearReturn}}</p>
+              </div>
+              <div class="col">
+                <label width="width:3%">Risk : </label>
+                <div class="risk-line"></div>
+                <p class="text-right sip-start">{{item.sip}}</p>
+                <p class="text-right">{{item.amount}}</p>
+              </div>
+            </div>
+            <mat-divider></mat-divider>
+            <p>+ Follow</p>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

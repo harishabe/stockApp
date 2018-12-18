@@ -1,0 +1,28 @@
+<section>
+  <div id="login" class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-5 login-top">
+        <h4 class="text-center">Sign in to start investing</h4>
+        <p class="text-center">Don't have an account? <a href="" routerLink="/signup" class="sign-up-now">Sign-up</a>
+          now</p>
+        <mat-card>
+          <p class="text-center">Sign in security with Gmail</p>
+          <button class="login-mt-10 gmail-login" style="width:100%" mat-flat-button> Sign in with Google</button>
+          <hr>
+          <form>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <button class="login-mt-10 sign-up" (click)="login()" style="width:100%" mat-flat-button color="primary"
+              routerLink='/login'>{{MESSAGE.OCR_SIGN_UP_BUTTON}}</button>
+          </form>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>
