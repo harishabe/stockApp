@@ -6,18 +6,18 @@ import { MaterialModule } from '../../material';
 import { Icons } from './../../config/icon.config';
 import { Message } from './../../config/message.en';
 
-import { SwitchComponent } from './switch.component';
+import { RetirementPlanDetailComponent } from './retirement-plan-details.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: SwitchComponent
+        component: RetirementPlanDetailComponent
     }
 ];
 
 @NgModule({
     imports: [CommonModule, MaterialModule, RouterModule.forChild(routes)],
-    declarations: [SwitchComponent],
+    declarations: [RetirementPlanDetailComponent],
     providers: [Icons, Message]
 })
-export class SwitchModule { }
+export class RetirementPlanDetailModule { }

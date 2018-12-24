@@ -7,6 +7,7 @@ import { Icons } from './../config/icon.config';
 import { Message } from './../config/message.en';
 
 import { LoginComponent } from './login.component';
+import { NavBarComponent } from './../navBar/navBar';
 
 const routes: Routes = [
     {

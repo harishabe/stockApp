@@ -3,11 +3,8 @@
     <div class="container">
       <img src="./../../assets/img/Finbrij_Logo2-1.png" />
       <button mat-button routerLink="/all">Explore funds</button>
-      <button mat-button routerLink="/addGoals">Add goals</button>
-      <mat-form-field class="search-width">
-        <input matInput>
-      </mat-form-field>
-      <div *ngIf="!showNavBar" style="display:inline-block">
+      <button mat-button routerLink="/addGoal">Add goals</button>      
+      <div *ngIf="!showNavBar" style="display:inline-block;float:right">
         <button class="sign-in" mat-flat-button routerLink="/login" color="primary">Sign-in</button>
         <button class="sign-in" mat-flat-button routerLink="/signup" color="primary">Register</button>
       </div>

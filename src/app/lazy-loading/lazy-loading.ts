@@ -11,7 +11,8 @@ const routes: Routes = [
   { path: 'forget-password', loadChildren: './../forget-pwd/forget-pwd.module#ForgetPwdModule' },
   { path: 'equity', loadChildren: './../explore-funds/equity/equity.module#EquityModule' },
   { path: 'all', loadChildren: './../explore-funds/all-type/all-type.module#AllTypeModule' },
-  { path: 'addGoals', loadChildren: './../add-goals/add-goals.module#AddGoalsModule' }
+  { path: 'addGoal', loadChildren: './../add-goals/add-goals.module#AddGoalsModule' },
+  { path: 'moreDetail', loadChildren: './../explore-funds/stockMoreDetail/stockMoreDetail.module#StockMoreDetailModule' }
 ];
 
 @NgModule({

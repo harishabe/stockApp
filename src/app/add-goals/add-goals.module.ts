@@ -1,23 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Routes, RouterModule } from '@angular/router';
+import { MaterialModule } from './../material';
 
-import { MaterialModule } from '../material';
+import { AddGolasRoutingModule } from './add-goals.routing.module';
+import { AddGoalsComponent } from './add-goals.component';
+
 import { Icons } from './../config/icon.config';
-import { Message } from './../config/message.en';
 
-import { AddGoalsComponent } from './add-goals.component'
-
-const routes: Routes = [
-    {
-        path: '',
-        component: AddGoalsComponent
-    }
-];
 
 @NgModule({
-    imports: [CommonModule, MaterialModule, RouterModule.forChild(routes)],
+    imports: [CommonModule, MaterialModule, AddGolasRoutingModule],
     declarations: [AddGoalsComponent],
-    providers: [Icons, Message]
+    providers:[Icons]
 })
 export class AddGoalsModule { }

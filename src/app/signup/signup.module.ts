@@ -5,7 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { MaterialModule } from '../material';
 import { Icons } from './../config/icon.config';
 import { Message } from './../config/message.en';
-
+import { NavBarComponent } from './../navBar/navBar';
 import { SignupComponent } from './signup.component';
 
 const routes: Routes = [

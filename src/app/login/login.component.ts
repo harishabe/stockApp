@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
   login() {
     this.showDashboardMenu = true;
     localStorage.setItem('showMenu', this.showDashboardMenu);
-    this.router.navigate(['/dashboard/briefing']);
+    this.router.navigate(['/dashboard/userInfo']);
   }
 
 }

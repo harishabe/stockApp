@@ -10,7 +10,10 @@
 @import './../app/layout/profile/profile.component';
 @import './../app/layout/briefing/briefing.component';
 @import './../app/layout/my-watch-list/my-watch-list.component';
-
+@import './../app/layout/switches/switches.component';
+@import './../app/layout/switches/switch/switch.component';
+@import './../app/layout/userInfo/userInfo.component';
+@import './../app/add-goals/add-goals.component';
 .mat-chip.mat-standard-chip{
   background-color:$white;
 }

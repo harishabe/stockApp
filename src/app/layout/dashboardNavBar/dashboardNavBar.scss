@@ -5,19 +5,31 @@
   color: white;
 }
 
+#navBar {
+  .dashboard-icon{
+    a{
+      padding-left:10px;
+    }
+  }
+}
+
+
 #secondary-navbar {
   .secondary-navbar {
     position: relative;
     text-align: center;
     color: $white;
-    .img-bg{
-        width:100%;
-        height: 50px;
+
+    .img-bg {
+      width: 100%;
+      height: 50px;
     }
+
     .centered {
       position: absolute;
       top: 50%;
       left: 42%;
+
       ul {
         list-style-type: none;
         margin: 0;

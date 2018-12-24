@@ -11,7 +11,7 @@ import { NavBarComponent } from './navBar/navBar';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxSoapModule } from 'ngx-soap';
-
+import { NavBarModule } from './navBar/navBar.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import { NgxSoapModule } from 'ngx-soap';
     FlexLayoutModule,
     HttpModule,
     NgxSoapModule
+    //NavBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
