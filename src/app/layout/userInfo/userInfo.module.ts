@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../../material';
 
 import { userInfoComponent } from './userInfo.component';
+import { DashboardNavBarComponent } from './../dashboardNavBar/primary-nav-bar/dashboardNavBar';
 
 import { userInfoRoutingModule } from './userInfo.routing.module'
 

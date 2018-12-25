@@ -5,7 +5,7 @@
 @import './main.scss';
 @import './common.scss';
 @import './../app/login/login.component';
-@import './../app/layout/dashboardNavBar/dashboardNavBar';
+@import './../app/layout/dashboardNavBar/primary-nav-bar/dashboardNavBar';
 @import './../app/layout/nav-bar/nav-bar.component';
 @import './../app/layout/profile/profile.component';
 @import './../app/layout/briefing/briefing.component';
@@ -14,6 +14,7 @@
 @import './../app/layout/switches/switch/switch.component';
 @import './../app/layout/userInfo/userInfo.component';
 @import './../app/add-goals/add-goals.component';
+@import './../app/layout/actions/action.component';
 .mat-chip.mat-standard-chip{
   background-color:$white;
 }

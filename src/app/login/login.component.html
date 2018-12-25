@@ -3,7 +3,7 @@
     <div class="container">
       <img src="./../../assets/img/Finbrij_Logo2-1.png" />
       <button mat-button routerLink="/all">Explore funds</button>
-      <button mat-button routerLink="/addGoal">Add goals</button>      
+      <button mat-button routerLink="/addGoal">Add goals</button>
       <div *ngIf="!showNavBar" style="display:inline-block;float:right">
         <button class="sign-in" mat-flat-button routerLink="/login" color="primary">Sign-in</button>
         <button class="sign-in" mat-flat-button routerLink="/signup" color="primary">Register</button>
@@ -17,7 +17,7 @@
   <div id="login" class="container">
     <div class="row justify-content-md-center">
       <div class="col-sm-5 login-top">
-        <h4 class="text-center">Sign in to start investing</h4>
+        <h2 style="font-weight:100" class="text-center">Sign in to start investing</h2>
         <p class="text-center">Don't have an account? <a href="" routerLink="/signup" class="sign-up-now">Sign-up</a>
           now</p>
         <mat-card>
@@ -26,11 +26,12 @@
           <hr>
           <form>
             <div class="form-group">
-              <label for="email">Email:</label>
+              <label for="email">Email</label>
               <input type="email" class="form-control" id="email">
             </div>
             <div class="form-group">
-              <label for="pwd">Password:</label>
+              <label for="pwd">Password</label>
+              <label style="float:right">Forgot password?</label>
               <input type="password" class="form-control" id="pwd">
             </div>
             <button class="login-mt-10 sign-up" (click)="login()" style="width:100%" mat-flat-button color="primary">{{MESSAGE.FINBRIDGE_SIGN_IN_BUTTON}}</button>
@@ -41,6 +42,9 @@
             <span class="text-underline">our Privacy policy</span>
           </p>
         </mat-card>
+        <div class="center">
+          <img style="margin-top: 15px;" src="./../../assets/img/Group.png" />
+        </div>
       </div>
     </div>
   </div>

@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'all', loadChildren: './../explore-funds/all-type/all-type.module#AllTypeModule' },
   { path: 'addGoal', loadChildren: './../add-goals/add-goals.module#AddGoalsModule' },
   { path: 'moreDetail', loadChildren: './../explore-funds/stockMoreDetail/stockMoreDetail.module#StockMoreDetailModule' }
+  
 ];
 
 @NgModule({

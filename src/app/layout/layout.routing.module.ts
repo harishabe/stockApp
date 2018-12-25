@@ -15,7 +15,8 @@ const routes: Routes = [
             { path: 'addExisting', loadChildren: './add-existing/add-existing.module#AddexistingModule' },
             { path: 'switches', loadChildren: './switches/switches.module#SwitchesModule' },
             { path: 'userInfo', loadChildren: './userInfo/userInfo.module#userInfoModule' },
-            { path: 'orderPlace', loadChildren: './orderPlace/orderPlace.module#OrderPlaceModule' }
+            { path: 'orderPlace', loadChildren: './orderPlace/orderPlace.module#OrderPlaceModule' },
+            { path: 'actions', loadChildren: './actions/action.module#ActionModule' }
         ]
     }
 ];

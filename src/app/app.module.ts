@@ -12,11 +12,13 @@ import { NavBarComponent } from './navBar/navBar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxSoapModule } from 'ngx-soap';
 import { NavBarModule } from './navBar/navBar.module';
+import { SampleComponent } from './components/sample/sample.component';
 
 @NgModule({
   declarations: [
     NavBarComponent,
-    AppComponent
+    AppComponent,
+    SampleComponent
   ],
   imports: [
     BrowserModule,

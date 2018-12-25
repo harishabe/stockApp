@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 @Component({
-    selector: 'dashboard-nav-bar',
+    selector: 'app-dashboard-nav-bar',
     templateUrl: './dashboardNavBar.html',
     styleUrls:['./dashboardNavBar.scss']
 })
